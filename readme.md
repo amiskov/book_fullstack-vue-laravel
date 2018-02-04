@@ -1,5 +1,5 @@
 # Full Stack Vue.js 2 and Laravel 5
-[![](cover.png){:height="36px" width="36px"}](https://www.packtpub.com/application-development/full-stack-vuejs-2-and-laravel-5)
+[![](cover.png)](https://www.packtpub.com/application-development/full-stack-vuejs-2-and-laravel-5)
 
 Норм книга. Информации по Vue вполне хватит для создания средних интерфейсов, Ларавель затрагивается совсем чуть-чуть. То есть книжка про Vue, ориентирована на фронтенд. Ларавель тут просто потому, что это сложившийся стэк. Книга подойдет тем, кто начинает работать с Vue и хочет получше разобраться, как получать/хранить/менять данные на фронте.
 
