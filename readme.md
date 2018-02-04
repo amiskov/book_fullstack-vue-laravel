@@ -25,10 +25,9 @@ php artisan serve
 В [этой статье](https://vuejsdevelopers.com/2017/03/05/vue-js-reactivity/) объясняются принципы реактивности Vue. Там геттеры и сеттеры. Как только свойство в `data` меняется, срабатывают сеттеры, которые цепляют разные другие штуки и получается автообновление приложения.
 
 ## Как влиять на тег `body`
-Vue-приложение хавает определенный элемент, который подменяет. Вот это вот в инициализации: `el: '#app'`. А если надо добавить `body` класс, когда мы хотим модальное окно показать, чтоб боди не скроллилось?
+Vue-приложение подменяет определенный элемент (`el: '#app'`) и остальная страница для него чужая. А если надо добавить `body` класс, когда мы хотим модальное окно показать, чтоб боди не скроллилось?
 
 Это можно сделать через вотчеры. Вотчеры так же следят за именением состояния и в них можно манипулировать DOM как обычно, через API браузера.
-
 
 ## 4. Building a Web Service with Laravel
 ### Facade pattern
@@ -113,7 +112,7 @@ let routes = [
 ### Creating routes
 There are two modes for Vue Router: hash mode and history mode. Hash mode uses the URL hash to simulate a full URL so that the page won't be reloaded when the hash changes. History mode has real URLs and leverages the history.pushState API to change the URL without causing a page reload. The only downside to history mode is that URLs outside of the app, such as `/some/weird/path`, can't be handled by Vue and must be handled by the server. That's no problem for us, so we'll use history mode for Vuebnb.
 
-## 8. Managing application state with Vues
+## 8. Managing application state with Vuex
 ### Flux Architecture
 1. Единственный источник правды. Каждый компонент содержит внутри себя данные о своем собственном состоянии, но данные, касающиеся других компонентов лежат в Сторе. Все компоненты берут данные из него:
 
@@ -202,4 +201,4 @@ store.dispatch('assignVal', 10);
 By abstracting asynchronous code into actions we can still centralize any state-altering logic in the store without tainting our application data through race conditions.
 
 ## 10 Deploying a Full-Stack App to the Cloud
-https://devcenter.heroku.com/articles/getting-started-with-laravel#setting-a-laravel-encryption-key
+На Хероку задеплоить не получилось, что-то пошло не так с PHP.
